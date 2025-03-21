@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" >
+    <div id="navbar" >
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #3c083c tranparent !important;" style="position: sticky; top: 0; background-color: white; z-index: 1000 !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.htm">Vigz Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" style="transition: all 0.3s ; border-bottom: 2px solid transparent;" onmouseover="this.style.borderBottom='2px solid transparent';" onmouseout="this.style.borderBottom='2px solid transparent';" aria-current="page" href="index.htm">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="transition: all 0.3s; border-bottom: 2px solid transparent;" onmouseover="this.style.borderBottom='2px solid transparent';" onmouseout="this.style.borderBottom='2px solid transparent';" href="about.htm">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="transition: all 0.3s; border-bottom: 2px solid transparent;" onmouseover="this.style.borderBottom='2px solid transparent';" onmouseout="this.style.borderBottom='2px solid transparent';" href="contact.htm">Contact us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center" role="search">
+                        <div class="dropdown">
+                            <button class="btn btn-mode-selector dropdown-toggle" type="button" id="weatherModeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Select Mode
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="weatherModeDropdown">
+                                <li><a class="dropdown-item" href="#" onclick="changeTheme('rainy')">Rainy</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeTheme('summer')">Summer</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeTheme('winter')">Winter</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeTheme('cloudy')">Cloudy</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeTheme('morning')">Morning</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeTheme('afternoon')">Afternoon</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeTheme('evening')">Evening</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="changeTheme('night')">Night</a></li>
+                            </ul>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Carousel Section -->
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="mern">
+                <h3>MERN Stack developer</h3>
+            </div>
+            <!-- Banner Section --> 
+             <div class="banner"> 
+                <div class="word write">Sleep</div> 
+                <div class="word read">Eat</div> 
+                <div class="word coffee">Code</div> 
+                <div class="word repeat">Repeat</div> 
+            </div>
+
+           
+            
+            
+            
+            
+
+            <div class="carousel-item active" style="border-top: 1px solid black !important;" >
+                <img src="img/Purple Creative Finance LinkedIn Banner (5) (2).png" class="d-block w-100" alt="Portfolio Banner" style="  z-index: -1;">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="wrapper">
+        <div class="static-txt">I'm</div>
+        <ul class="dynamic-txts">
+          <li><span>Vighnesh Khadake</span></li>
+          <li><span>MERNStack Developer</span></li>
+          <li><span>Vighnesh Khadake</span></li>
+          <li><span>MERNStack Developer</span></li>
+        </ul>
+      </div>
+
+    <div class="dynamic-container">
+        <div class="dynamic-card text-bg-dark text-center">
+          <div class="content">
+            <h2 class="display-5">Frontend Development</h2>
+            <p class="lead">Proficient in <b> HTML, CSS, JavaScript,</b> and <b> Bootstrap </b> for creating responsive and visually appealing web designs.
+                Skilled in building interactive and user-friendly interfaces with React.js.</p>
+          </div>
+          <div class="card-bg"></div>
+        </div>
+        <div class="dynamic-card bg-body-tertiary text-center">
+          <div class="content">
+            <h2 class="display-5">Backend Development</h2>
+            <p class="lead">Strong understanding of server-side development using <b> Node.js </b>  and <b> Express.js. </b>
+                Experience with creating RESTful APIs for seamless client-server communication.</p>
+          </div>
+          <div class="card-bg"></div>
+        </div>
+      </div>
+
+ 
+
+  <div class="d-flex h-100 text-center text-bg-dark" 
+  style="background: linear-gradient(135deg, #f0f4fd, #dbeafe); color: #0c0c0c; height: 100vh; display: flex; align-items: center; justify-content: center;">
+<main class="px-3">
+ <h1 style="color: #0c0c0c;">About Me</h1>
+ <p class="lead" style="color: #0c0c0c;">Welcome to my portfolio! I’m Vighnesh Khadake, a passionate and dedicated MERN Stack Developer with 3 months of hands-on experience in building web applications. I specialize in creating responsive and user-friendly websites using a combination of cutting-edge technologies.</p>
+ <p class="lead">
+   <a href="about.htm" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
+ </p>
+</main>
+</div>
+      
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="index.htm" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="about.htm" class="nav-link px-2 text-body-secondary">About</a></li>
+                    <li class="nav-item"><a href="contact.htm" class="nav-link px-2 text-body-secondary">Contact</a></li>
+                </ul>
+                <p class="text-center text-body-secondary" style="color: #d2bba0 !important;">&copy; 2024 Company, Inc</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeTheme(theme) {
+            const body = document.getElementById('body');
+            body.className = ''; // Reset classes
+            body.classList.add(`theme-${theme}`);
+        }
+    </script>
+</body>
+</html>

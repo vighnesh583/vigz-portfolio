@@ -1,0 +1,460 @@
+/* General Styling */
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Navbar Styles */
+#navbar .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+#navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    color: #6B46C1;
+    transition: color 0.3s ease;
+}
+
+#navbar .navbar-brand:hover {
+    color: #F6AD55;
+}
+
+#navbar .nav-link {
+    color: #4299E1;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#navbar .nav-link:hover {
+    color: #F6AD55;
+    transform: scale(1.1);
+}
+
+#navbar .btn-signup {
+    background-color: #F6AD55;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#navbar .btn-signup:hover {
+    background-color: #DD6B20;
+    transform: scale(1.1);
+}
+
+/* Theme Styles with Gradient Colors */
+.theme-rainy {
+    background: linear-gradient(135deg, #58616b, #00aaff);
+    color: #FFFFFF;
+}
+
+.theme-summer {
+    background: linear-gradient(135deg, #e5ff00, #ff6200);
+    color: #333333;
+}
+
+.theme-winter {
+    background: linear-gradient(135deg, #1E3A8A, #A5D8F3);
+    color: #FFFFFF;
+}
+
+.theme-cloudy {
+    background: linear-gradient(135deg, #B0BEC5, #78909C);
+    color: #333333;
+}
+
+.theme-morning {
+    background: linear-gradient(135deg, #FE8DC6, #FED1C7);
+    color: #333333;
+}
+
+.theme-afternoon {
+    background: linear-gradient(135deg, #fd8b00, #32f9e8);
+    color: #333333;
+}
+
+.theme-evening {
+    background: linear-gradient(135deg, #c300ff, #f945c0);
+    color: #FFFFFF;
+}
+
+.theme-night {
+    background: linear-gradient(135deg, #2D388A, #03141b);
+    color: #FFFFFF;
+}
+
+/* Interactive Animation */
+#navbar .btn-mode-selector {
+    animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #FFD700;
+    }
+    50% {
+        box-shadow: 0 0 20px #FFD700;
+    }
+    100% {
+        box-shadow: 0 0 5px #FFD700;
+    }
+}
+
+/* Transition Effects for Weather Modes */
+.theme-rainy .navbar, .theme-summer .navbar, .theme-winter .navbar, .theme-cloudy .navbar,
+.theme-morning .navbar, .theme-afternoon .navbar, .theme-evening .navbar, .theme-night .navbar {
+    transition: background-color 0.5s ease;
+}
+
+/* Dynamic Container Styling */
+.dynamic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* Dynamic Card Styling */
+  .dynamic-card {
+    position: relative;
+    width: 45%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .dynamic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Content Styling */
+  .dynamic-card .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .dynamic-card h2,
+  .dynamic-card p {
+    margin: 0;
+  }
+  
+  /* Background Styling */
+  .dynamic-card .card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    transition: background 0.5s ease;
+  }
+  
+  /* Card Specific Colors */
+  .dynamic-card.text-bg-dark .card-bg {
+    background: linear-gradient(135deg, #850ce7, #d900ff);
+  }
+  
+  .dynamic-card.bg-body-tertiary .card-bg {
+    background: linear-gradient(135deg, #f741f4, #bf0db0);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dynamic-container {
+      flex-direction: column;
+    }
+  
+    .dynamic-card {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+
+  .nav-link { position: relative; 
+    text-decoration: none; 
+    color: inherit; }
+   .nav-link::before { content: ''; 
+    position: absolute; 
+    width: 0; 
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor; 
+    visibility: hidden;
+    transition: all 1s ease-in-out; } 
+   .nav-link:hover::before { 
+    visibility: visible; 
+    width: 100%; }
+
+    /* Banner Styles */
+.carousel-inner {
+    position: relative;
+  
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent; /*   transparent background */
+    padding: 15px;
+    position: absolute;
+    top: 11em;
+    left: 25px;
+    width: 20%;
+    height: 50%;
+    z-index: 2;
+    color: white;
+    
+}
+
+.banner .word {
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;  
+    opacity: 0;
+    animation: popUp 4s infinite;
+    
+}
+
+.banner .write {
+    background-color: #8A2BE2;
+    animation-delay: 0s;
+      
+}
+
+.banner .read {
+    background-color: #FF4500;
+    animation-delay: 1s;
+   
+}
+
+.banner .coffee {
+    background-color: #FF69B4;
+    animation-delay: 2s;
+    
+}
+
+.banner .repeat {
+    background-color: #1E90FF;
+    animation-delay: 3s;
+    padding: 15px !important;
+    
+}
+
+@keyframes popUp {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    25%, 75% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#footer .container ul a  {
+  color: #69585f !important;
+}
+
+.mern h3 {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 20%;
+  padding: auto;
+  font-size: 3rem; /* Adjust font size */
+  font-weight: bold; /* Optional */
+  background: linear-gradient(90deg, #d96812, #af4cf1, #9711d0, #ca3bf1, #b10fbd, #bf0db0, #c80faf, #d011ad);
+  -webkit-background-clip: text; /* Clip the background to text */
+  color: transparent; /* Make the text transparent to show the gradient */
+  z-index: 4;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.wrapper{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  z-index: -2;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  background: white;
+  
+  
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: black;
+  font-size: 60px;
+  font-weight: 400;
+  position: relative;
+  bottom: 10px;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #d5573b;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 117%;
+  width: 100%;
+  background: white ;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.col-lg-6 a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.col-lg-6 button:hover {
+   background-color: blueviolet;
+ 
+}
+.col-lg-6 a:hover {
+  color: rgb(255, 123, 0);
+
+}
+.col-lg-6 a:link {
+  text-decoration: none !important;  
+}
+
+/* General Styles */
+.containercontact {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.containercontact {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #000000;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about  p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+strong {
+  color: #050505;
+}
+
+/* Contact Section */
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact ul li {
+  margin: 10px 0;
+}
+
+#contact ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contact ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Link Hover Effect */
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
